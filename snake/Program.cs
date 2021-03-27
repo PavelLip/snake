@@ -23,12 +23,13 @@ namespace snake
             point p4 = new point(3, 4, '^');
             p4.draw();
             
-
+            /*
             List<point> plist = new List<point>();
             plist.Add (p1);
             plist.Add (p2);
             plist.Add (p3);
             plist.Add (p4);
+            */
 
 
 
