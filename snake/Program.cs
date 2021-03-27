@@ -11,12 +11,7 @@ namespace snake
         static void Main(string[] args)
         {
 
-            point p1 = new point(1, 3, '*');
-            p1.draw();
-
-            point p2 = new point(4, 5, '#');
-            p2.draw();
-            // addd
+            
 
             
             Console.ReadLine();
