@@ -10,30 +10,19 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            
+            /*
             point p1 = new point(1, 3, '*');
             p1.draw();
 
             point p2 = new point(4, 5, '#');
             p2.draw();
-
-            point p3 = new point(2, 7, '&');
-            p3.draw();
-
-            point p4 = new point(3, 4, '^');
-            p4.draw();
-            
-            /*
-            List<point> plist = new List<point>();
-            plist.Add (p1);
-            plist.Add (p2);
-            plist.Add (p3);
-            plist.Add (p4);
             */
 
+            HorizontailLine linex = new HorizontailLine(5, 10, 8, '+');
+            linex.draw();
 
-
-
+            verticalLine liney = new verticalLine(5, 4, 14, '+');
+            liney.draw();
 
             Console.ReadLine();
         }

@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HorizontailLine.cs" />
     <Compile Include="point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="verticalLine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
