@@ -17,6 +17,7 @@ namespace snake
             point p2 = new point(4, 5, '#');
             p2.draw();
 
+            //ad ccc
 
             
             Console.ReadLine();
