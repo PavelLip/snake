@@ -24,8 +24,10 @@ namespace snake
             leftLine.draw();
             rightLine.draw();
 
-            point p = new point(4, 5, '*');
-            p.draw();
+            point p = new point(7, 5, '*');
+            snake snake = new snake(p, 4, direction.up);
+            snake.draw();
+
 
             Console.ReadLine();
         }

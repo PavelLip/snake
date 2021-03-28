@@ -19,10 +19,43 @@ namespace snake
             sym = _sym;
         }
 
+        public point(point p)
+        {
+            x = p.x;
+            y = p.y;
+            sym = p.sym;
+        }
+
+        public void move(int offset, direction direction)
+        {
+            if (direction == direction.rigth)
+            {
+                x = x + offset;
+            }   
+            else if (direction == direction.left)
+            {
+                x = x - offset;
+            }
+            else if (direction == direction.up)
+            {
+                y = y + offset;
+            }
+            else if (direction == direction.down)
+            {
+                y = y - offset;
+            }
+        }
+
+
         public void draw()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+        }
+
+        public override string ToString()
+        {
+            return x + ", " + y + ", " + sym;
         }
     }
 }
