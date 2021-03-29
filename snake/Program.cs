@@ -13,7 +13,7 @@ namespace snake
         {
 
             Console.SetWindowSize(80, 25);
-            //Console.SetBufferSize(80, 25);
+            Console.SetBufferSize(80, 25);
 
             HorizontailLine upLine = new HorizontailLine(0, 78, 0, '+');
             HorizontailLine downLine = new HorizontailLine(0, 78, 24, '+');
@@ -29,22 +29,18 @@ namespace snake
             snake snake = new snake(p, 4, direction.rigth);
             snake.draw();
 
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
-            snake.move();
-            Thread.Sleep(300);
+            
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+
+                }
+                Thread.Sleep(100);
+                snake.move();
+            }
 
 
 
